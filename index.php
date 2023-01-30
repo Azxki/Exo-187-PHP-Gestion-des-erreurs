@@ -24,6 +24,7 @@ try {
     // Corrigez moi ( si je me trompe ! ).
     $result = divide();
     // Afficher la variable $result.
+    return $result;
 }
 catch(//TODO Complétez moi !) {
     // TODO afficher le message contenu dans $e.
