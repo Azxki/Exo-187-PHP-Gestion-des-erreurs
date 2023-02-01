@@ -19,13 +19,17 @@ function divide(int $number, int $by) {
     return $number / $by;
 }
 
-// TODO Compléter le code en fournissent un OU deux zéro en paramètre de la fonction divide !
+// TODO Compléter le code en fournissant un OU deux zéro en paramètre de la fonction divide !
 try {
     // Corrigez moi ( si je me trompe ! ).
-    $result = divide();
+    $result = divide(0, 0);
     // Afficher la variable $result.
     return $result;
 }
-catch(//TODO Complétez moi !) {
-    // TODO afficher le message contenu dans $e.
+catch(Exception $e) {
+    echo "Un script essentiel n'a pas pu être trouvé <br>";
+    echo "Message : " . $e->getMessage() . "<br>";
+    echo "Code : " . $e->getCode() . "<br>";
+    echo "File : " . $e->getFile() . "<br>";
+    echo "Line : " . $e->getLine() . "<br>";
 }
